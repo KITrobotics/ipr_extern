@@ -1,0 +1,29 @@
+#- git:
+#    local-name: cob_common
+#    uri: git@github.com:ipa320/cob_common.git
+#    version: indigo_dev
+#- git:
+#    local-name: cob_extern
+#    uri: git@github.com:ipa320/cob_extern.git
+#    version: indigo_dev
+#- git:
+#    local-name: cob_perception_common
+#    uri: git@github.com:ipa320/cob_perception_common.git
+#    version: indigo_dev
+#- git:
+#    local-name: ros_canopen
+#    uri: git@gitlab.ira.uka.de:iirob/ros_canopen.git
+#    version: jade-devel
+#- git:
+#    local-name: rqt_launchtree
+#    uri: git@github.com:pschillinger/rqt_launchtree.git
+#    version: master
+#- git:
+#    local-name: moveit
+#    uri: git@github.com:iirob/moveit.git
+#    version: iirob-kinetic-devel
+#-git:
+#    local-name: ros_control
+#    uri: git@github.com:KITrobotics/ros_control.git
+#    version: kinetic-kit
+

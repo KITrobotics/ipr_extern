@@ -1,0 +1,30 @@
+# The following block is needed for the shared Docker-based runner
+# For local runners you might want to enable the overlay driver:
+# https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#using-the-overlayfs-driver
+
+image: docker:git # docker and git clients
+
+# The docker runner does not expose /tmp to the docker-in-docker service
+# This config ensures that the temp folder is located inside the project directory (e.g. for prerelease tests or SSH agent forwarding)
+variables:
+  TMPDIR: "${CI_PROJECT_DIR}.tmp" #
+  UPSTREAM_WORKSPACE: "file"
+  ROSINSTALL_FILENAME: ".gitlab-ci.rosinstall"
+
+# enable docker-in-docker
+services:
+  - docker:dind
+
+before_script:
+  - apk add --update bash coreutils tar # install industrial_ci dependencies
+  - git clone https://github.com/ros-industrial/industrial_ci .ci_config
+  - sed -i 's/https\:\/\/gitlab\.ipr\.kit\.edu/https\:\/\/gitlab-ci-token\:'${CI_JOB_TOKEN}'\@gitlab\.ipr\.kit\.edu/g' ${CI_PROJECT_DIR}/${ROSINSTALL_FILENAME}
+
+# setup the actual tests
+kinetic:
+  script: .ci_config/gitlab.sh
+  variables:
+    ROS_DISTRO: "kinetic"
+  tags:
+    - docker
+
