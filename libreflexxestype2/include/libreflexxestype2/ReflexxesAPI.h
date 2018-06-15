@@ -43,8 +43,8 @@
 #define __ReflexxesAPI__
 
 
-#include <RMLPositionInputParameters.h>
-#include <RMLPositionOutputParameters.h>
+#include "RMLPositionInputParameters.h"
+#include "RMLPositionOutputParameters.h"
 #include <RMLPositionFlags.h>
 #include <RMLVelocityInputParameters.h>
 #include <RMLVelocityOutputParameters.h>
