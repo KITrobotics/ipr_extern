@@ -24,7 +24,7 @@ endif()
 if(SUPPORTED MATCHES "true")
   catkin_package(
     CFG_EXTRAS libreflexxestypeII-extras.cmake # catkin_package does not support artifacts in devel space
-    INCLUDE_DIRS include include/${PROJECT_NAME}/
+    INCLUDE_DIRS include
   )
   
   
@@ -33,6 +33,7 @@ if(SUPPORTED MATCHES "true")
     build_reflexxes ALL
         # copy headers to devel space (catkin does not like headers in source space)
         COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME} ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_INCLUDE_DESTINATION}/
+        COMMAND ${CMAKE_COMMAND} -E copy_directory ${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME} ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_INCLUDE_DESTINATION}/../
         # copy libs, set-up soname chain
         COMMAND ${CMAKE_COMMAND} -E copy_if_different ${PROJECT_SOURCE_DIR}/Linux/x64/release/lib/shared/libReflexxesTypeII.so ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_LIB_DESTINATION}
         COMMAND ${CMAKE_COMMAND} -E create_symlink libReflexxesTypeII.so ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_LIB_DESTINATION}/libreflexxestypeII.so
