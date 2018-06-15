@@ -49,8 +49,8 @@
 #define __TypeIIRMLStep2IntermediateTimeProfiles__
 
 
-#include <TypeIIRMLPolynomial.h>
-#include <TypeIIRMLMath.h>
+#include "TypeIIRMLPolynomial.h"
+#include "TypeIIRMLMath.h"
 
 
 namespace TypeIIRMLMath

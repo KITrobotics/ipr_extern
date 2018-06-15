@@ -52,8 +52,8 @@
 #define __TypeIIRMLStep2Profiles__
 
 
-#include <TypeIIRMLPolynomial.h>
-#include <TypeIIRMLMath.h>
+#include "TypeIIRMLPolynomial.h"
+#include "TypeIIRMLMath.h"
 
 
 namespace TypeIIRMLMath
