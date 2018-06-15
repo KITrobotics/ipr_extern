@@ -24,7 +24,7 @@ endif()
 if(SUPPORTED MATCHES "true")
   catkin_package(
     CFG_EXTRAS libreflexxestypeII-extras.cmake # catkin_package does not support artifacts in devel space
-#     INCLUDE_DIRS include
+    INCLUDE_DIRS include
 #     LIBRARIES ReflexxesTypeII
   )
   
