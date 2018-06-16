@@ -50,7 +50,7 @@
 #define __RMLVelocityInputParameters__
 
 
-#include <RMLInputParameters.h>
+#include "RMLInputParameters.h"
 #include <math.h>
 
 

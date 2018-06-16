@@ -56,7 +56,7 @@
 #define __TypeIIRMLDecisionTree2__
 
 
-#include <TypeIIRMLPolynomial.h>
+#include "TypeIIRMLPolynomial.h"
 
 
 namespace TypeIIRMLMath

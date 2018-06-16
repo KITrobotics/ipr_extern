@@ -48,7 +48,7 @@
 #ifndef __TypeIIRMLStep1IntermediateProfiles__
 #define __TypeIIRMLStep1IntermediateProfiles__
 
-#include <TypeIIRMLMath.h>
+#include "TypeIIRMLMath.h"
 
 
 namespace TypeIIRMLMath

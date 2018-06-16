@@ -47,16 +47,16 @@
 #define __TypeIIRMLPosition__
 
 
-#include <RMLVelocityInputParameters.h>
-#include <RMLVelocityOutputParameters.h>
-#include <RMLPositionInputParameters.h>
-#include <RMLPositionOutputParameters.h>
-#include <RMLPositionFlags.h>
-#include <RMLVelocityFlags.h>
-#include <RMLVector.h>
-#include <TypeIIRMLPolynomial.h>
-#include <TypeIIRMLStep1Profiles.h>
-#include <TypeIIRMLVelocity.h>
+#include "RMLVelocityInputParameters.h"
+#include "RMLVelocityOutputParameters.h"
+#include "RMLPositionInputParameters.h"
+#include "RMLPositionOutputParameters.h"
+#include "RMLPositionFlags.h"
+#include "RMLVelocityFlags.h"
+#include "RMLVector.h"
+#include "TypeIIRMLPolynomial.h"
+#include "TypeIIRMLStep1Profiles.h"
+#include "TypeIIRMLVelocity.h"
 
 
 using namespace TypeIIRMLMath;

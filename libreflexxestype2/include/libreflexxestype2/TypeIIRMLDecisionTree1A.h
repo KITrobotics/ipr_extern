@@ -55,7 +55,7 @@
 #ifndef __TypeIIRMLDecisionTree1A__
 #define __TypeIIRMLDecisionTree1A__
 
-#include <TypeIIRMLStep1Profiles.h>
+#include "TypeIIRMLStep1Profiles.h"
 
 
 namespace TypeIIRMLMath

@@ -50,7 +50,7 @@
 #define __RMLVelocityOutputParameters__
 
 
-#include <RMLOutputParameters.h>
+#include "RMLOutputParameters.h"
 
 
 //  ---------------------- Doxygen info ----------------------
