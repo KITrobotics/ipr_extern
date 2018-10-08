@@ -51,6 +51,7 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>libreflexxestype2</exec_depend>
+  <exec_depend>ros_reflexxes</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->
