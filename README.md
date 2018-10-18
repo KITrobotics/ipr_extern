@@ -1,10 +1,11 @@
-iirob_extern
+ipr_extern
 ==========================================
 
 ## ROS Distro Support
 
 |         | Kinetic | Melodic |
-|:-------:|:-------:|:-------:|
-| Branch  | [`kinetic-devel`](https://gitlab.ipr.kit.edu/IIROB/iirob_extern/tree/kinetic-devel) | 
-| Status  | [![build status](https://gitlab.ipr.kit.edu/IIROB/iirob_extern/badges/kinetic-devel/pipeline.svg)](https://gitlab.ipr.kit.edu/$NAMESPACE$/iirob_extern/commits/kinetic-devel) | |
+|:-------:|:------:|:--------:|
+| Branch  | [`kinetic_devel`](https://github.com/KITrobotics/ipr_extern/tree/kinetic-devel) |
+| Status  | [![Build Status](https://travis-ci.org/KITrobotics/ipr_extern.svg?branch=kinetic-devel)](https://travis-ci.org/KITrobotics/ipr_extern) |
+| Version | [version](http://repositories.ros.org/status_page/ros_kinetic_default.html?q=ipr_extern) |
 
