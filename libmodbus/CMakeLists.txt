@@ -20,7 +20,7 @@ include_directories(
 )
 
 add_library(modbus
-  src/modbus-data.c1
+  src/modbus-data.c
   src/modbus-rtu.c
   src/modbus-tcp.c
   src/modbus.c
