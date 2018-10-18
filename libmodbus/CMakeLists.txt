@@ -15,11 +15,12 @@ catkin_package(
 ###########
 
 include_directories(
+  include
   include/modbus
 )
 
 add_library(modbus
-  src/modbus-data.c
+  src/modbus-data.c1
   src/modbus-rtu.c
   src/modbus-tcp.c
   src/modbus.c
@@ -37,7 +38,7 @@ install(TARGETS modbus
 )
 
 ## Mark cpp header files for installation
-install(DIRECTORY include
+install(DIRECTORY include include/modbus
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
   FILES_MATCHING PATTERN "*.h"
   PATTERN ".svn" EXCLUDE
