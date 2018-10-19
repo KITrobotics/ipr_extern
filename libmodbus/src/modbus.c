@@ -27,10 +27,10 @@
 #include <limits.h>
 #include <time.h>
 
-#include <config.h>
+#include <libmodbus/config.h>
 
-#include "modbus.h"
-#include "modbus-private.h"
+#include "libmodbus/modbus.h"
+#include "libmodbus/modbus-private.h"
 
 /* Internal use */
 #define MSG_LENGTH_UNDEFINED -1

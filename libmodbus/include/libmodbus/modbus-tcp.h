@@ -19,7 +19,7 @@
 #ifndef _MODBUS_TCP_H_
 #define _MODBUS_TCP_H_
 
-#include "modbus.h"
+#include "libmodbus/modbus.h"
 
 MODBUS_BEGIN_DECLS
 
