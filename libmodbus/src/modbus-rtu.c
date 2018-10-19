@@ -26,10 +26,10 @@
 #endif
 #include <assert.h>
 
-#include "modbus-private.h"
+#include "libmodbus/modbus-private.h"
 
-#include "modbus-rtu.h"
-#include "modbus-rtu-private.h"
+#include "libmodbus/modbus-rtu.h"
+#include "libmodbus/modbus-rtu-private.h"
 
 #if HAVE_DECL_TIOCSRS485
 #include <sys/ioctl.h>

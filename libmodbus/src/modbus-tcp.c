@@ -57,10 +57,10 @@
 #define MSG_NOSIGNAL 0
 #endif
 
-#include "modbus-private.h"
+#include "libmodbus/modbus-private.h"
 
-#include "modbus-tcp.h"
-#include "modbus-tcp-private.h"
+#include "libmodbus/modbus-tcp.h"
+#include "libmodbus/modbus-tcp-private.h"
 
 #ifdef OS_WIN32
 static int _modbus_tcp_init_win32(void)

@@ -28,9 +28,9 @@
 typedef int ssize_t;
 #endif
 #include <sys/types.h>
-#include <config.h>
+#include <libmodbus/config.h>
 
-#include "modbus.h"
+#include "libmodbus/modbus.h"
 
 MODBUS_BEGIN_DECLS
 

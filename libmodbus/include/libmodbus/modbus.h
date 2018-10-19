@@ -32,7 +32,7 @@
 #include <time.h>
 #endif
 
-#include "modbus-version.h"
+#include "libmodbus/modbus-version.h"
 
 #ifdef  __cplusplus
 # define MODBUS_BEGIN_DECLS  extern "C" {
