@@ -2,8 +2,8 @@
 Changelog for package libmodbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.8.1 (2018-12-11)
+------------------
 * Cleaned libmodbus with correct includes (#2)
 * Update CMakeLists.txt
 * Update CMakeLists.txt

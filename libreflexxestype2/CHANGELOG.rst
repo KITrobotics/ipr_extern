@@ -2,8 +2,8 @@
 Changelog for package libreflexxestype2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.8.1 (2018-12-11)
+------------------
 * Merge branch 'local_headers' into 'kinetic-devel'
   Changed includes to local files
   See merge request IIROB/iirob_extern!10

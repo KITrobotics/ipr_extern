@@ -2,8 +2,8 @@
 Changelog for package ipr_extern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.8.1 (2018-12-11)
+------------------
 * Ati rs485 interface (#1)
   * Integrated the libmodbus package (https://libmodbus.org/).
   The package was build on the official v3.1.4. release of libmodbus and was slightly modified.
