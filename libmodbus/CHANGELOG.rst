@@ -2,6 +2,11 @@
 Changelog for package libmodbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed redundant makefile
+* Contributors: Gilbert Groten
+
 0.8.3 (2018-12-12)
 ------------------
 * removed redundant makefile
