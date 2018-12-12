@@ -2,6 +2,11 @@
 Changelog for package libmodbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed previously generated .la files
+* Contributors: Gilbert Groten
+
 0.8.6 (2018-12-12)
 ------------------
 * removed redundant include file
