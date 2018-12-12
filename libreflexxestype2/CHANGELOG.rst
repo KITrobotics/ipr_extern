@@ -2,6 +2,9 @@
 Changelog for package libreflexxestype2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.8.7 (2018-12-12)
 ------------------
 
