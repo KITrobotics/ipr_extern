@@ -2,6 +2,9 @@
 Changelog for package ros_reflexxes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.8.1 (2018-12-11)
 ------------------
 * Merge branch 'reflexxes_interface' into 'kinetic-devel'

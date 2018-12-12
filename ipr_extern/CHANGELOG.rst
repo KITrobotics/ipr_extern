@@ -2,6 +2,9 @@
 Changelog for package ipr_extern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.8.1 (2018-12-11)
 ------------------
 * Ati rs485 interface (#1)
