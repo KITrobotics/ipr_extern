@@ -2,8 +2,8 @@
 Changelog for package libmodbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.8.5 (2018-12-12)
+------------------
 * removed redundant source file
 * Contributors: Gilbert Groten
 
