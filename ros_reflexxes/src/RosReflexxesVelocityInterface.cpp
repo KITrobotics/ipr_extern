@@ -1,8 +1,12 @@
 #include <ros_reflexxes/RosReflexxesVelocityInterface.h>
+#include <pluginlib/class_list_macros.hpp>
 
-RosReflexxesVelocityInterface::RosReflexxesVelocityInterface( std::string ns ) {
-        if (!load_parameters(ns) ) {
-            ROS_FATAL_STREAM("Unable to initialize Reflexxes as no parameters could be read. Please verify that all parameters exist on the given namespace '" << ns <<"' and try again!");
+bool RosReflexxesVelocityInterface::init( ros::NodeHandle nh ) {
+        if (!load_parameters(nh.getNamespace()) ) {
+            ROS_FATAL_STREAM("Unable to initialize Reflexxes as no parameters could be read. Please verify that all "
+                             "parameters exist on the given namespace '" <<
+                             nh.getNamespace() <<"' and try again!");
+            return false;
         } else {
                 //initialize Reflexxes with loaded value
                 rml_.reset(new ReflexxesAPI(n_dim_, period_));
@@ -18,6 +22,7 @@ RosReflexxesVelocityInterface::RosReflexxesVelocityInterface( std::string ns ) {
                 }
         }
         position_initialized_ = false;
+        return true;
 }//RosReflexxesVelocityInterface::RosReflexxesVelocityInterface()
 
 bool RosReflexxesVelocityInterface::load_parameters( std::string ns ) {
@@ -64,7 +69,7 @@ bool RosReflexxesVelocityInterface::load_parameters( std::string ns ) {
     return true;
 }//RosReflexxesVelocityInterface::load_parameters
 
-void RosReflexxesVelocityInterface::starting(std::vector<double> c_pos) {
+void RosReflexxesVelocityInterface::starting(const std::vector<double> &c_pos) {
     
     if (c_pos.size() == n_dim_) {
             for (int i=0; i<n_dim_; i++) {
@@ -148,12 +153,15 @@ double RosReflexxesVelocityInterface::get_period() {
 }//RosReflexxesVelocityInterface::get_period()
 
 /*setter*/
-void RosReflexxesVelocityInterface::set_target_velocity(std::vector<double> t_vel) {
+void RosReflexxesVelocityInterface::set_target_velocity( const std::vector<double> &t_vel) {
     if (t_vel.size() == n_dim_) {
             for (int i=0; i<n_dim_; i++) {
-                    input_params_->TargetVelocityVector->VecData[i] = t_vel[i];
+                input_params_->TargetVelocityVector->VecData[i] = t_vel[i];
             }
     } else {
             ROS_WARN("RosReflexxesVelocityInterface::set_target_velocity is unable to execute the input because input dimensions (%d) don't match the reflexxes dimension (%d)", (int) t_vel.size(), n_dim_ );
     }
 }//RosReflexxesVelocityInterface::set_target_velocity
+
+
+PLUGINLIB_EXPORT_CLASS(RosReflexxesVelocityInterface, RosReflexxesInterface);

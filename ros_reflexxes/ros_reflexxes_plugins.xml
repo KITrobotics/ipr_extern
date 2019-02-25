@@ -1,0 +1,12 @@
+<library path="lib/libros_reflexxes">
+    <class name="ros_reflexxes/RosReflexxesPositionInterface"
+           type="RosReflexxesPositionInterface"
+           base_class_type="RosReflexxesInterface">
+        <description>some ddescription</description>
+    </class>
+    <class name="ros_reflexxes/RosReflexxesVelocityInterface"
+           type="RosReflexxesVelocityInterface"
+           base_class_type="RosReflexxesInterface">
+        <description>some description</description>
+    </class>
+</library>
