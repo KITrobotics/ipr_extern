@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>ipr_extern</name>
-  <version>0.8.8</version>
+  <version>0.9.0</version>
   <description>Package with external libraries used in Industrial and Service workspaces. Currentlly supported Libraries: Reflexxes, Libmodbus.</description>
 
   <maintainer email="denis.stogl@kit.edu">Denis Štogl</maintainer>

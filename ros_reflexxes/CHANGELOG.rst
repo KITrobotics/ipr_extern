@@ -2,8 +2,8 @@
 Changelog for package ros_reflexxes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.9.0 (2020-03-10)
+------------------
 * ros_reflexxes interfaces loadable as a plugin (`#4 <https://github.com/KITrobotics/ipr_extern/issues/4>`_)
 * Contributors: Denis Štogl
 
