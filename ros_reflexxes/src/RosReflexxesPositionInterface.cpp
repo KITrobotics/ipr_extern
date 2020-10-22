@@ -24,6 +24,7 @@ bool RosReflexxesPositionInterface::init( ros::NodeHandle nh ) {
                 }
         }
         position_initialized_ = false; 
+        return true;
 }//RosReflexxesPositionInterface::RosReflexxesPositionInterface()
 
 bool RosReflexxesPositionInterface::load_parameters(std::string ns) {
